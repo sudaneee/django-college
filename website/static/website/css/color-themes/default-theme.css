@@ -91,7 +91,7 @@ a,
 .contact-page-section .form-column .inner-column h3,
 .sidebar-page-container .comments-area .comment .comment-inner .rating .fa,
 .sidebar-page-container .comments-area .comment .comment-inner .reply {
-    color: #2ECC40;
+    color: #3D9970;
 }
 
 
@@ -144,12 +144,12 @@ a,
 .blog-single .inner-box .lower-content .post-meta:after,
 .pricing-column .inner-box:hover .lower-content .join-btn,
 .main-header .outer-box .option-box .cart-box .cart-panel .btns-boxed li a:hover {
-    background-color: #2ECC40;
+    background-color: #3D9970;
 }
 
 .pricing-column.active .inner-box,
 .pricing-column .inner-box:hover {
-    outline-color: #2ECC40;
+    outline-color: #3D9970;
 }
 
 
@@ -202,19 +202,19 @@ a,
 .shop-form input:focus,
 .shop-form select:focus,
 .shop-form textarea:focus {
-    border-color: #2ECC40;
+    border-color: #3D9970;
 }
 
 .header-style-two .nav-outer::before,
 .header-style-two .nav-outer .side-curve {
-    border-bottom-color: #2ECC40;
+    border-bottom-color: #3D9970;
 }
 
 
 /*RGBA Color Light*/
 
 .services-block-two .inner-box .overlay-box .overlay-inner {
-    background-color: rgba(19, 234, 19, 0.85);
+    background-color: rgba(39, 167, 114, 0.959);
 }
 
 
@@ -223,12 +223,12 @@ a,
 .call-to-action:before,
 .case-block .inner-box .image .overlay-box:before,
 .sponsors-section:before {
-    background-color: rgba(19, 234, 19, 0.85);
+    background-color: rgba(39, 167, 114, 0.959);
 }
 
 @media only screen and (max-width: 767px) {
     .main-menu .navbar-header .navbar-toggle {
-        border-color: #2ECC40;
+        border-color: #3D9970;
     }
     .main-menu .navbar-header .navbar-toggle,
     .main-menu .navbar-collapse>.navigation,
@@ -246,6 +246,6 @@ a,
     .main-menu .navbar-collapse>.navigation>li.current>a,
     .main-menu .navbar-collapse>.navigation>li.current-menu-item>a,
     .header-style-two.inner-header .main-menu .navigation>li>a {
-        background-color: #2ECC40;
+        background-color: #3D9970;
     }
 }
