@@ -11,6 +11,7 @@ def data_processor(request):
     courses = Course.objects.all()
     staffs = Staff.objects.all()
     blogs = Blog.objects.all()
+    about_header_bg = Picture.objects.get(title="about header bg")
     return {
         'data' : query,
         'car1': carousel[0],
@@ -21,4 +22,5 @@ def data_processor(request):
         'courses': courses,
         'staffs': staffs,
         'blogs': blogs,
+        'about_header_bg': about_header_bg,
     }
