@@ -106,3 +106,10 @@ class Staff(models.Model):
         return self.name
 
 
+class Gallery(models.Model):
+    image = models.ImageField(upload_to='pics')
+    title = models.CharField(max_length=200, null=True)
+
+    def __str__(self):
+        return self.title
+

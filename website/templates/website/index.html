@@ -22,7 +22,7 @@
                         <h1>{{car1.title}}</h1>
                         <div class="text">{{car1.content}}</div>
                         <div class="link-box">
-                            <a href="#" class="theme-btn btn-style-one">Learn More</a> <a href="#" class="theme-btn btn-style-two">Apply Now</a>
+                            <a href="#" class="theme-btn btn-style-one">Learn More</a> <a href="{% url 'form-home'%}" class="theme-btn btn-style-two">Apply Now</a>
                         </div>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                         <h1>{{car2.title}}</h1>
                         <div class="text">{{car2.content}}</div>
                         <div class="link-box">
-                            <a href="#" class="theme-btn btn-style-one">Learn More</a> <a href="#" class="theme-btn btn-style-two">Apply Now</a>
+                            <a href="#" class="theme-btn btn-style-one">Learn More</a> <a href="{% url 'form-home'%}" class="theme-btn btn-style-two">Apply Now</a>
                         </div>
                     </div>
                 </div>
@@ -358,9 +358,9 @@
                             </div> {% endcomment %}
                             <h5><a href="blog-single.html">{{blog.title}}</a></h5>
                             <div class="text">{{blog.content}}</div>
-                            {% comment %} <ul class="post-date">
-                                <li>14th August, 2019</li>
-                            </ul> {% endcomment %}
+                            <ul class="post-date">
+                                <li>{{blog.posted}}</li>
+                            </ul> 
                         </div>
                     </div>
                 </div>
