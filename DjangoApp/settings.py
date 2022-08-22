@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'apis',
     'website',
     'form_app',
+    'studentPortal',
 
 
 
