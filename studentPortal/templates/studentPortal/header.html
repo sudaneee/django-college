@@ -13,21 +13,26 @@
                 <div class="pull-left logo-box">
                     <div class="logo"><a href="index-2.html"><img src="{{data.logo.url}}" alt="" title="" style="width: 300px;"></a></div>
                 </div>
-                <div class="pull-right logo-box">
-                    <div class="logo"><a href="index-2.html"><img src="{{data.logo.url}}" alt="" title="" style="width: 200px; border-radius: 15px; border: 2px solid green; margin-left:5px;"></a></div>
-                </div>
+
                 
                 <div class="pull-right upper-right clearfix">
                     
                     <!--Info Box-->
                     <div class="upper-column info-box">
                         
-                        
-                        <ul>
-                            <li>Ismail Abbas</li>
-                            <li>U18EK2060</li>
-                            <li>400 Level B. Sc. Physics</li>
-                        </ul>
+                        <div class="testimonial-block">
+                            <div class="inner-box">
+                                <div class="author-info">
+                                    <div class="image">
+                                        <img src="{{student.passport.url}}" alt="" />
+                                    </div>
+                                    <h6>{{student.name}}</h6>
+                                    <div class="designation">{{student.user}}</div>
+                                    <div class="designation">{{student.current_level}}</div>
+                                    <div class="designation"><a href="{% url 'logout' %}">Logout</a></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     
 
@@ -62,12 +67,14 @@
                     </div>
                     
                     <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+
+                        
                         <ul class="navigation clearfix">
-                            <li class="current"><a href="#">DashBoard</a></li>
-                            <li class=""><a href="#">School Fees</a></li>
-                            <li class=""><a href="#">Examination</a></li>
-                            <li class=""><a href="#">Assignments</a></li>
-                            <li class=""><a href="#">Bio-Data</a></li>
+                            <li class="current"><a href="{% url 'student-dashboard' %}">DashBoard</a></li>
+                            <li class=""><a href="{% url 'school-fees' %}">School Fees</a></li>
+                            <li class=""><a href="{% url 'exam' %}">Examination</a></li>
+                            <li class=""><a href="{% url 'assignment' %}">assignments</a></li>
+                            <li class=""><a href="{% url 'student-profile' %}">Profile</a></li>
 
                     </div>
                 </nav>
@@ -99,11 +106,11 @@
                     
                     <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent1">
                         <ul class="navigation clearfix">
-                            <li class="current"><a href="#">DashBoard</a></li>
-                            <li class=""><a href="#">School Fees</a></li>
-                            <li class=""><a href="#">Examination</a></li>
-                            <li class=""><a href="#">Assignments</a></li>
-                            <li class=""><a href="#">Bio-Data</a></li>
+                            <li class="current"><a href="{% url 'student-dashboard' %}">DashBoard</a></li>
+                            <li class=""><a href="{% url 'school-fees' %}">School Fees</a></li>
+                            <li class=""><a href="{% url 'exam' %}">Examination</a></li>
+                            <li class=""><a href="{% url 'assignment' %}">assignments</a></li>
+                            <li class=""><a href="{% url 'student-profile' %}">Profile</a></li>
 
                         </ul>
                     </div>
@@ -126,11 +133,11 @@
         <div class="menu-box">
             <nav class="full-menu">
                 <ul class="navigation">
-                    <li class="current"><a href="#">DashBoard</a></li>
-                    <li class=""><a href="#">School Fees</a></li>
-                    <li class=""><a href="#">Examination</a></li>
-                    <li class=""><a href="#">Assignments</a></li>
-                    <li class=""><a href="#">Bio-Data</a></li>
+                    <li class="current"><a href="{% url 'student-dashboard' %}">DashBoard</a></li>
+                    <li class=""><a href="{% url 'school-fees' %}">School Fees</a></li>
+                    <li class=""><a href="{% url 'exam' %}">Examination</a></li>
+                    <li class=""><a href="{% url 'assignment' %}">assignments</a></li>
+                    <li class=""><a href="{% url 'student-profile' %}">Profile</a></li>
                 </ul>
             </nav>
         </div>

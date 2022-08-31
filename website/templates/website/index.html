@@ -15,26 +15,30 @@
 
         <div class="main-slider-carousel owl-carousel owl-theme">
 
-            <div class="slide" style="background-image:url('{{car1.image.url}}')">
+
+            {% for carousel in carousels%}
+            <div class="slide" style="background-image:url('{{carousel.image.url}}')">
                 <div class="auto-container">
-                    <div class="content clearfix">
+                    <div class="content centered clearfix">
                         <div class="title"></div>
-                        <h1>{{car1.title}}</h1>
-                        <div class="text">{{car1.content}}</div>
+                        <h1>{{carousel.title}}</h1>
+                        <div class="text">{{carousel.content}}</div>
                         <div class="link-box">
                             <a href="#" class="theme-btn btn-style-one">Learn More</a> <a href="{% url 'form-home'%}" class="theme-btn btn-style-two">Apply Now</a>
                         </div>
                     </div>
                 </div>
             </div>
-            
+            {% endfor %}
 
-            <div class="slide" style="background-image:url('{{car2.image.url}}')">
+
+
+            <div class="slide" style="background-image:url('{{car5.image.url}}')">
                 <div class="auto-container">
                     <div class="content centered clearfix">
                         <div class="title"></div>
-                        <h1>{{car2.title}}</h1>
-                        <div class="text">{{car2.content}}</div>
+                        <h1>{{car5.title}}</h1>
+                        <div class="text">{{car5.content}}</div>
                         <div class="link-box">
                             <a href="#" class="theme-btn btn-style-one">Learn More</a> <a href="{% url 'form-home'%}" class="theme-btn btn-style-two">Apply Now</a>
                         </div>
@@ -253,7 +257,7 @@
                                 <li><a href="#"><span class="fa fa-instagram"></span></a></li>
                             </ul>
                         </div>
-                        <div class="lower-content">
+                        <div class="lower-content mt-1">
                             <h6><a href="team-single.html">{{staff.name}}</a></h6>
                             <div class="designation">{{staff.designation}}</div>
                           
